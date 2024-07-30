@@ -1,0 +1,4 @@
+This is a sentence
+This sentence is appended: today is a good day!
+This sentence is sync appended: know know
+here is GUI
