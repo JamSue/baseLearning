@@ -20,10 +20,10 @@ fs.writeFileSync('./setting/fileSync.txt', 'This is written by sync operation', 
     // 同步写入，同步写入完成后再执行后面的代码
     // 更易于理解，但是效率更低
     if (err) {
-        console.log('写入文件失败')
+        console.log('同步写入文件失败')
         return
     }
-    console.log('写入文件成功')
+    console.log('同步写入文件成功')
 })
 
 

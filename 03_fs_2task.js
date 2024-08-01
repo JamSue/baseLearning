@@ -3,7 +3,7 @@
  */
 const fs = require('fs')
 const process = require('process') // process的内置函数可以查看程序运行占用内存
-// 方法1： 同步读取
+// 方法1： 同步读取: 不接收回调函数作为参数
 let data = fs.readFileSync('./setting/1.mp4')
 console.log(data)
 fs.writeFileSync('./setting/IStanU.mp4', data)
