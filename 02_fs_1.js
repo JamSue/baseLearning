@@ -83,8 +83,9 @@ console.log('同步读取\n', data.toString()) // 读取文件转为字符串
 const rs = fs.createReadStream('./setting/1.MP4') // 创建读取流对象
 
 rs.on('data', chunk => {
-    // 绑定data事件，流式读取每一个chunk，每个chunk是一个内存块大小<=64KB
+    // 绑定data事件，流式读取每一个chunk，每读取应该chunk调用一次回调函数，每个chunk是一个内存块大小<=64KB
     // 因为是视频内容，转字符串会乱码
+    // 文件内容-->buffer对象
     console.log(chunk)
     console.log(chunk.length)
 })
